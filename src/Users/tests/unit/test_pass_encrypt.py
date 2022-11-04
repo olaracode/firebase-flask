@@ -11,9 +11,7 @@ class TestEncryption:
         WHEN encrypting a password
         THEN return a encrypted version of the password
         """
-
         assert encrypted_password != test_password, "the generated password can not be the same as the password given"
-
 
     def test_valid_password_decript(self):
         """
@@ -21,7 +19,6 @@ class TestEncryption:
         WHEN verifying if the correct password is valid
         THEN return True
         """
-
         assert check_password(encrypted_password, test_password, test_salt) is True, "should return true when the passwords match"
 
     def test_invalid_password_decript(self):
@@ -39,7 +36,6 @@ class TestEncryption:
         WHEN calling the function
         THEN return a random string
         """
-
         first_salt = generate_salt()
         assert isinstance(first_salt, str) is True, "should return a string"
     
