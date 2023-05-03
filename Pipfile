@@ -12,8 +12,12 @@ sqlalchemy = "*"
 flask-migrate = "*"
 flask-jwt-extended = "*"
 pytest = "*"
+firebase-admin = "*"
+python-firebase = "*"
+requests = "*"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.9"
@@ -21,7 +25,6 @@ python_version = "3.9"
 [scripts]
 start = "python src/run.py"
 test = "python -m pytest"
-
 init = "flask db init"
 migrate = "flask db migrate"
 upgrade = "flask db upgrade"
