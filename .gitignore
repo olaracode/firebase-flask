@@ -26,3 +26,4 @@ instance/
 
 # Web assets cache
 .webassets-cache
+firebase.json
