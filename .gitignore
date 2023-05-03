@@ -1,1 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE specific
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+
+# Unit test / coverage reports
+.coverage
+htmlcov/
+
+# Dependency directories
+venv/
+pip-selfcheck.json
+
+# Secret environment variables
 .env
+
+# Flask instance folder
+instance/
+
+# Web assets cache
+.webassets-cache
